@@ -47,8 +47,8 @@ class SessionController {
         email,
         avatar,
         provider,
-        token: jwt.sign({ id }, authConfig.secret, authConfig.options),
       },
+      token: jwt.sign({ id }, authConfig.secret, authConfig.options),
     });
   }
 }
